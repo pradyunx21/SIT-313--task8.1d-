@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Gill+Sans:wght@400;700&display=swap');
+
+body {
+    font-family: 'Gill Sans', sans-serif;
+}
+
+.Article {
+    width: 100%;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    border-radius: 10px;
+}
+
+label {
+    margin-left: 20px;
+    font-weight: bold;
+    color: #555;
+}
+
+.A1 {
+    display: block;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.Title {
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    font-size: 24px;
+    width: 90%;
+}
+
+.Tags {
+    display: block;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #eeeeee;
+    width: 90%;
+    border-radius: 6px;
+}
+
+textarea, input[type="text"] {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    height: 150px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="radio"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #007acc;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+}
+
+input[type="radio"]:checked::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: #007acc;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

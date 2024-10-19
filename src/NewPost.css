@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Gill+Sans:wght@400;700&display=swap');
+
+body {
+    font-family: 'Gill Sans', sans-serif;
+}
+
+.NewPostBar {
+    display: flex;
+    flex-direction: column;
+    background-color: #007acc;
+    padding: 30px;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+.NewPostBar h2 {
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+.NewPostBar input[type="text"],
+.NewPostBar textarea {
+    width: 90%;
+    padding: 15px;
+    margin: 10px auto;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+.NewPostBar input[type="file"] {
+    margin-bottom: 15px;
+    display: block;
+    width: 90%;
+    padding: 10px;
+    margin: 0 auto 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.NewPostBar button {
+    background-color: #333;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.NewPostBar button:hover {
+    background-color: #444;
+}
+
+.NewPostBar progress {
+    width: 90%;
+    margin-top: 15px;
+}
+
+input[type="radio"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #f4f4f4;
+    cursor: pointer;
+    position: relative;
+}
+
+input[type="radio"]:checked::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: #f4f4f4;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
